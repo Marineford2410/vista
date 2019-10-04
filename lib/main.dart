@@ -11,11 +11,12 @@ class Vista extends StatelessWidget{
         appBar: AppBar(
           title: Text('Vistas'),
         ),
-        body:
-        Align(
-          alignment: Alignment(0, 0),   // x(0 => centro, -1 => izquierda, 1 => derecha)
-                                            // y(0 => centro, -1 => arriba, 1 => abajo)
-          child: Text('Alinear'),
+        body: Column (
+          children: <Widget>[
+            Expanded(child: Image.asset('imagenes/1.jpg'), flex: 3),
+            Expanded(child: Image.asset('imagenes/2.jpg'), flex: 2),
+            Expanded(child: Image.asset('imagenes/3.jpg'), flex: 1) // Default
+          ],
         ),
       ),
     );
