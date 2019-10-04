@@ -11,16 +11,11 @@ class Vista extends StatelessWidget{
         appBar: AppBar(
           title: Text('Vistas'),
         ),
-        body: SizedBox(
-          width: double.infinity,
-          height: 50,
-          child: FlatButton(
-            color: Colors.teal,
-            child: Text('Aceptar'),
-            onPressed: (){
-
-            },
-          ),
+        body:
+        Align(
+          alignment: Alignment(0, 0),   // x(0 => centro, -1 => izquierda, 1 => derecha)
+                                            // y(0 => centro, -1 => arriba, 1 => abajo)
+          child: Text('Alinear'),
         ),
       ),
     );
