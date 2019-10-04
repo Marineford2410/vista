@@ -11,17 +11,12 @@ class Vista extends StatelessWidget{
         appBar: AppBar(
           title: Text('Vistas'),
         ),
-        body: ListView(
-          children: <Widget>[
-            Text('Spiderman'),
-            Image.asset('imagenes/1.jpg', width: 50),
-            Text('Ironman'),
-            Image.asset('imagenes/2.jpg', width: 50),
-            Text('Capitan America'),
-            Image.asset('imagenes/3.jpg', width: 50),
-            Image.asset('imagenes/1.jpg', width: 50),
-            Image.asset('imagenes/2.jpg', width: 50)
-          ],
+        body:  Center(
+          child: Card(
+            child: Image.asset('imagenes/1.jpg', height: 400),
+            elevation: 10.0,
+            color: Colors.red,
+          ),
         ),
       ),
     );
