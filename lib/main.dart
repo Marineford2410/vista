@@ -11,25 +11,16 @@ class Vista extends StatelessWidget{
         appBar: AppBar(
           title: Text('Vistas'),
         ),
-        body: Container(
-          child: Text('Contenido del cuerpo'),
-          padding: EdgeInsets.all(50),
-          decoration: BoxDecoration(
-            color: Colors.greenAccent,
-            border: Border.all(
-                width: 6,
-                color: Colors.yellowAccent
-            ),
-            borderRadius: BorderRadius.circular(15),
-            boxShadow: [
-              BoxShadow(
-                  color: Colors.blue,
-                  offset: Offset(5.0, 5.0),
-                  blurRadius: 2.0
-              )
-            ],
+        body: SizedBox(
+          width: double.infinity,
+          height: 50,
+          child: FlatButton(
+            color: Colors.teal,
+            child: Text('Aceptar'),
+            onPressed: (){
+
+            },
           ),
-          margin: EdgeInsets.all(50),
         ),
       ),
     );
