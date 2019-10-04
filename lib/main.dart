@@ -11,7 +11,7 @@ class Vista extends StatelessWidget{
         appBar: AppBar(
           title: Text('Vistas'),
         ),
-        body: Column (
+        body: Row (
           children: <Widget>[
             Expanded(child: Image.asset('imagenes/1.jpg'), flex: 3),
             Expanded(child: Image.asset('imagenes/2.jpg'), flex: 2),
